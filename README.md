@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/xpert.png" alt="XpertEval" width="200">
+  <img src="docs/assets/xpert.png" alt="XpertEval" width="200">
 </p>
 
 # <p align="center">XpertEval：全模态大模型一站式评测框架</p>
