@@ -1,0 +1,55 @@
+/* 自定义样式 */
+.markdown-body {
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
+
+.highlight {
+  background-color: #f8f8f8;
+  border-radius: 3px;
+  padding: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #24292e;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 2em;
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: 0.3em;
+}
+
+h2 {
+  font-size: 1.5em;
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: 0.3em;
+}
+
+a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+table th, table td {
+  border: 1px solid #dfe2e5;
+  padding: 6px 13px;
+}
+
+table th {
+  background-color: #f6f8fa;
+  font-weight: 600;
+} 

@@ -1,0 +1,76 @@
+# Git
+.git
+.gitignore
+.github
+
+# 编辑器配置
+.vscode
+.idea
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.env
+.venv
+env.bak/
+venv.bak/
+.eggs/
+*.egg-info/
+*.egg
+
+# 测试
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# 日志和结果
+*.log
+logs/
+results/
+
+# 数据（除非特殊需要）
+data/large_files/
+models/
+
+# 临时文件
+tmp/
+temp/
+*.tmp
+
+# 文档
+docs/
+README.md
+CONTRIBUTING.md
+LICENSE
+*.md
+
+# 开发工具
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+
+# Docker相关
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# 其他
+.DS_Store
+Thumbs.db 

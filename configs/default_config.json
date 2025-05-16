@@ -1,0 +1,102 @@
+{
+  "general_eval": {
+    "text_understanding": {
+      "enabled": true,
+      "weight": 0.1,
+      "datasets": ["ceval", "mmlu", "cmmlu"],
+      "metrics": ["accuracy", "f1"]
+    },
+    "text_generation": {
+      "enabled": true,
+      "weight": 0.1,
+      "datasets": ["helm", "summeval"],
+      "metrics": ["rouge", "bleu", "perplexity"]
+    },
+    "visual": {
+      "enabled": true,
+      "weight": 0.1,
+      "datasets": ["mmbench", "mm-vet"],
+      "metrics": ["accuracy", "precision", "recall"]
+    },
+    "audio": {
+      "enabled": true,
+      "weight": 0.05,
+      "datasets": ["aishell", "esc-50"],
+      "metrics": ["wer", "accuracy"]
+    },
+    "multimodal": {
+      "enabled": true,
+      "weight": 0.15,
+      "datasets": ["seed-bench", "mmmu"],
+      "metrics": ["accuracy", "f1"]
+    }
+  },
+  "xpert_eval": {
+    "face_diagnosis": {
+      "enabled": true,
+      "weight": 0.05,
+      "datasets": ["tcm_face_dataset"],
+      "metrics": ["feature_recognition_accuracy", "syndrome_correlation"]
+    },
+    "tongue_diagnosis": {
+      "enabled": true,
+      "weight": 0.1,
+      "datasets": ["tcm_tongue_dataset"],
+      "metrics": ["body_accuracy", "coating_accuracy", "syndrome_correlation"]
+    },
+    "breathing_sound": {
+      "enabled": true,
+      "weight": 0.05,
+      "datasets": ["tcm_breathing_dataset"],
+      "metrics": ["sound_classification_accuracy", "syndrome_correlation"]
+    },
+    "symptom_understanding": {
+      "enabled": true,
+      "weight": 0.1,
+      "datasets": ["tcm_symptom_dataset"],
+      "metrics": ["symptom_recognition_rate", "category_f1"]
+    },
+    "medical_history": {
+      "enabled": true,
+      "weight": 0.05,
+      "datasets": ["tcm_history_dataset"],
+      "metrics": ["completeness", "structure_score"]
+    },
+    "pulse_diagnosis": {
+      "enabled": true,
+      "weight": 0.05,
+      "datasets": ["tcm_pulse_dataset"],
+      "metrics": ["pulse_recognition_accuracy", "syndrome_correlation"]
+    },
+    "multimodal_tcm": {
+      "enabled": true,
+      "weight": 0.1,
+      "datasets": ["tcm_multimodal_dataset"],
+      "metrics": ["modal_consistency", "syndrome_accuracy"]
+    },
+    "prescription": {
+      "enabled": true,
+      "weight": 0.1,
+      "datasets": ["tcm_prescription_dataset"],
+      "metrics": ["prescription_accuracy", "dosage_rationality", "explanation_rationality"]
+    }
+  },
+  "evaluation": {
+    "output_dir": "results",
+    "save_predictions": true,
+    "verbose": true,
+    "use_cache": false,
+    "num_workers": 4,
+    "batch_size": 8
+  },
+  "model": {
+    "device": "cuda",
+    "precision": "fp16",
+    "max_length": 2048,
+    "generation_params": {
+      "temperature": 0.1,
+      "top_p": 0.9,
+      "do_sample": false
+    }
+  }
+} 

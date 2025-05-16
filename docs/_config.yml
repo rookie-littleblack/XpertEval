@@ -1,0 +1,44 @@
+title: XpertEval
+description: 全模态大模型一站式评测框架
+theme: jekyll-theme-cayman
+
+show_downloads: true
+google_analytics: 
+
+# 边栏设置
+defaults:
+  -
+    scope:
+      path: "" # 应用于所有文件
+    values:
+      layout: "default"
+      sidebar: true
+
+# 目录结构
+toc:
+  - title: 入门指南
+    subfolderitems:
+      - page: 项目简介
+        url: introduction.html
+      - page: 快速入门
+        url: quickstart.html
+      - page: 项目状态
+        url: project_status.html
+      - page: 文档部署
+        url: deploying_docs.html
+  - title: 评测方法
+    subfolderitems:
+      - page: 通用能力评测
+        url: general_eval.html
+      - page: 多模态评测
+        url: multimodal_eval.html
+      - page: 中医专业评测（上）
+        url: xpert_eval.html
+      - page: 中医专业评测（下）
+        url: tcm_eval_part2.html
+  - title: 技术细节
+    subfolderitems:
+      - page: 评测指标（上）
+        url: metrics.html
+      - page: 评测指标（下）
+        url: metrics_part2.html 

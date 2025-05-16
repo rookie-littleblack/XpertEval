@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "zh-CN" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <style>
+      .sidebar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+        padding: 90px 0 0;
+        width: 260px;
+        box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+        overflow-y: auto;
+        background-color: #f8f9fa;
+      }
+      .sidebar-sticky {
+        padding: 20px;
+      }
+      .sidebar-heading {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-top: 15px;
+        margin-bottom: 10px;
+      }
+      .sidebar-item {
+        padding: 5px 0;
+        display: block;
+        color: #333;
+        text-decoration: none;
+        margin-left: 10px;
+      }
+      .sidebar-item:hover {
+        color: #0366d6;
+      }
+      .sidebar-item.active {
+        font-weight: bold;
+        color: #0366d6;
+      }
+      .main-content {
+        margin-left: 260px;
+        padding: 30px;
+      }
+      @media (max-width: 768px) {
+        .sidebar {
+          position: static;
+          width: 100%;
+          padding: 20px 0;
+        }
+        .main-content {
+          margin-left: 0;
+        }
+      }
+    </style>
+    {% include head-custom.html %}
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="sidebar-sticky">
+        <h1 style="font-size: 1.5rem;"><a href="{{ site.baseurl }}/" style="color: #333; text-decoration: none;">{{ site.title }}</a></h1>
+        {% for section in site.toc %}
+          <div class="sidebar-heading">{{ section.title }}</div>
+          {% for item in section.subfolderitems %}
+            <a class="sidebar-item {% if page.url == item.url %}active{% endif %}" href="{{ site.baseurl }}/{{ item.url }}">{{ item.page }}</a>
+          {% endfor %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="main-content">
+      {{ content }}
+
+      <footer class="site-footer">
+        {% if site.github.is_project_page %}
+          <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> 由 <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a> 维护。</span>
+        {% endif %}
+        <span class="site-footer-credits">XpertEval - 全模态大模型一站式评测框架</span>
+      </footer>
+    </div>
+  </body>
+</html> 

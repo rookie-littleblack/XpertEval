@@ -1,0 +1,84 @@
+# Python 缓存文件
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# 虚拟环境
+venv/
+env/
+ENV/
+.env
+.venv
+env.bak/
+venv.bak/
+
+# 分发/打包
+.eggs/
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+sdist/
+*.egg
+
+# 单元测试/覆盖率报告
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+*.code-workspace
+.history/
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea_modules/
+
+# 数据和模型文件
+data/
+models/
+*.model
+*.bin
+*.h5
+*.onnx
+*.pt
+*.pth
+*.pkl
+*.db
+
+# 日志
+*.log
+logs/
+output/
+results/
+
+# 项目特定
+configs/**/*.json
+!configs/default_config.json
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 临时文件
+tmp/
+temp/
+*.tmp 

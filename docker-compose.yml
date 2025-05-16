@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  xpert_eval:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: xpert_eval
+    restart: unless-stopped
+    volumes:
+      - ./data:/app/data
+      - ./configs:/app/configs
+      - ./results:/app/results
+      - ./models:/app/models
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - CUDA_VISIBLE_DEVICES=0
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    command: python examples/run_eval_demo.py --output_dir /app/results
+
+  # Web界面服务（可选）
+  web_ui:
+    build:
+      context: ./web_ui
+      dockerfile: Dockerfile
+    container_name: xpert_eval_web
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    depends_on:
+      - xpert_eval
+    volumes:
+      - ./results:/app/results
+    environment:
+      - XPERT_EVAL_SERVICE=xpert_eval 
