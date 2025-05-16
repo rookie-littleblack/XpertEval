@@ -35,7 +35,7 @@ toc:
       - page: 中医专业评测（上）
         url: xpert_eval.html
       - page: 中医专业评测（下）
-        url: tcm_eval_part2.html
+        url: xpert_eval_part2.html
   - title: 技术细节
     subfolderitems:
       - page: 评测指标（上）
