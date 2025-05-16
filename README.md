@@ -1,4 +1,18 @@
-# XpertEval：全模态大模型一站式评测框架
+<center>
+<img src="assets/xpert.png" alt="XpertEval" width="200">
+<h1>XpertEval：全模态大模型一站式评测框架</h1>
+
+<a href="https://github.com/rookie-littleblack/XpertEval">
+    <img src="https://img.shields.io/badge/GitHub-XpertEval-blue" alt="GitHub">
+</a>
+<a href="https://github.com/rookie-littleblack/XpertEval/issues">
+    <img src="https://img.shields.io/badge/GitHub-Issues-red" alt="GitHub Issues">
+</a>
+<a href="https://github.com/rookie-littleblack/XpertEval/pulls">
+    <img src="https://img.shields.io/badge/GitHub-Pull%20Requests-green" alt="GitHub Pull Requests">
+</a>
+
+</center>
 
 ## 项目概述
 

@@ -64,12 +64,25 @@
     <div class="sidebar">
       <div class="sidebar-sticky">
         <h1 style="font-size: 1.5rem;"><a href="{{ site.baseurl }}/" style="color: #333; text-decoration: none;">{{ site.title }}</a></h1>
-        {% for section in site.toc %}
-          <div class="sidebar-heading">{{ section.title }}</div>
-          {% for item in section.subfolderitems %}
-            <a class="sidebar-item {% if page.url == item.url %}active{% endif %}" href="{{ site.baseurl }}/{{ item.url }}">{{ item.page }}</a>
-          {% endfor %}
-        {% endfor %}
+        
+        <!-- 入门指南 -->
+        <div class="sidebar-heading">入门指南</div>
+        <a class="sidebar-item" href="{{ site.baseurl }}/introduction">项目简介</a>
+        <a class="sidebar-item" href="{{ site.baseurl }}/quickstart">快速入门</a>
+        <a class="sidebar-item" href="{{ site.baseurl }}/project_status">项目状态</a>
+        <a class="sidebar-item" href="{{ site.baseurl }}/deploying_docs">部署文档</a>
+        
+        <!-- 评测方法 -->
+        <div class="sidebar-heading">评测方法</div>
+        <a class="sidebar-item" href="{{ site.baseurl }}/general_eval">通用能力评测</a>
+        <a class="sidebar-item" href="{{ site.baseurl }}/multimodal_eval">多模态评测</a>
+        <a class="sidebar-item" href="{{ site.baseurl }}/xpert_eval">专业领域评测（上）</a>
+        <a class="sidebar-item" href="{{ site.baseurl }}/xpert_eval_part2">专业领域评测（下）</a>
+        
+        <!-- 技术细节 -->
+        <div class="sidebar-heading">技术细节</div>
+        <a class="sidebar-item" href="{{ site.baseurl }}/metrics">评测指标（上）</a>
+        <a class="sidebar-item" href="{{ site.baseurl }}/metrics_part2">评测指标（下）</a>
       </div>
     </div>
 

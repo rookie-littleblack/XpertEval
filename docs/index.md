@@ -22,20 +22,20 @@ XpertEval 是一个专为多模态大模型设计的全面评测体系。本项�
 ## 文档导航
 
 ### 入门指南
-- [项目简介](introduction.html)
-- [快速入门](quickstart.html)
-- [项目状态](project_status.html)
-- [部署文档](deploying_docs.html)
+- [项目简介](introduction)
+- [快速入门](quickstart)
+- [项目状态](project_status)
+- [部署文档](deploying_docs)
 
 ### 评测方法
-- [通用能力评测](general_eval.html)
-- [多模态评测](multimodal_eval.html)
-- [专业领域评测（上）](xpert_eval.html)
-- [专业领域评测（下）](xpert_eval_part2.html)
+- [通用能力评测](general_eval)
+- [多模态评测](multimodal_eval)
+- [专业领域评测（上）](xpert_eval)
+- [专业领域评测（下）](xpert_eval_part2)
 
 ### 技术细节
-- [评测指标（上）](metrics.html)
-- [评测指标（下）](metrics_part2.html)
+- [评测指标（上）](metrics)
+- [评测指标（下）](metrics_part2)
 
 ## 开始使用
 
@@ -50,7 +50,7 @@ pip install -e .
 python examples/simple_example.py
 ```
 
-查看[快速入门](quickstart.html)了解更多使用方法。
+查看[快速入门](quickstart)了解更多使用方法。
 
 ## 贡献与支持
 

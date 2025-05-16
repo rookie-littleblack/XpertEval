@@ -1,11 +1,17 @@
 title: XpertEval
 description: 全模态大模型一站式评测框架
-remote_theme: pages-themes/cayman@v0.2.0
-plugins:
-  - jekyll-remote-theme
+theme: jekyll-theme-cayman
 
-show_downloads: true
-google_analytics: 
+# GitHub Pages设置
+github:
+  is_project_page: true
+  repository_url: https://github.com/rookie-littleblack/XpertEval
+
+# 基本设置
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
 # 边栏设置
 defaults:
@@ -21,26 +27,26 @@ toc:
   - title: 入门指南
     subfolderitems:
       - page: 项目简介
-        url: introduction.html
+        url: introduction
       - page: 快速入门
-        url: quickstart.html
+        url: quickstart
       - page: 项目状态
-        url: project_status.html
+        url: project_status
       - page: 文档部署
-        url: deploying_docs.html
+        url: deploying_docs
   - title: 评测方法
     subfolderitems:
       - page: 通用能力评测
-        url: general_eval.html
+        url: general_eval
       - page: 多模态评测
-        url: multimodal_eval.html
+        url: multimodal_eval
       - page: 中医专业评测（上）
-        url: xpert_eval.html
+        url: xpert_eval
       - page: 中医专业评测（下）
-        url: xpert_eval_part2.html
+        url: xpert_eval_part2
   - title: 技术细节
     subfolderitems:
       - page: 评测指标（上）
-        url: metrics.html
+        url: metrics
       - page: 评测指标（下）
-        url: metrics_part2.html 
+        url: metrics_part2 
